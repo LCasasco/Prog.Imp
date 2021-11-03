@@ -50,9 +50,10 @@ let msg = "haha!"
 let eBonito = "false"
 !((str || msg) && eBonito)
 
-// str, msg e eBonito são todos strings com valores definidos, logo são true
+// str, é uma string vazia, logo é false
+// msg e eBonito são strings com valores definidos, logo são true
 // podemos então resolver a expressão como:
-// !((true || true) && true)=
+// !((false || true) && true)
 // !(true && true)
 // !(true)
 // false
