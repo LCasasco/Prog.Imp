@@ -13,9 +13,7 @@
 // - Opções não listadas no menu, devem exibir uma mensagem de erro: "Prato inexistente";
 // - Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”;
 // - No final de cada tarefa, o microondas deverá exibir a mensagem: "Prato pronto, bom apetite!!!".
-
-
-// 
+ 
 
 function esquentarComida(idComida, tempo){
     switch (idComida) {
@@ -28,7 +26,7 @@ function esquentarComida(idComida, tempo){
             }
             else if (tempo > 30)
             {
-                console.log("KABUUMMMMM! Você tomou 50 de dano de fogo!")
+                console.log("KABUUMMMMM! Você tomou " + tempo + " pontos de dano de fogo!")
             }
             else if (tempo < 10) 
             {
@@ -45,7 +43,7 @@ function esquentarComida(idComida, tempo){
             }
             else if (tempo > 24)
             {
-                console.log("KABUUMMMMM! Você tomou 50 de dano de fogo!")
+                console.log("KABUUMMMMM! Você tomou " + tempo + " pontos de dano de fogo!")
             }
             else if (tempo < 8) 
             {
@@ -62,7 +60,7 @@ function esquentarComida(idComida, tempo){
             }
             else if (tempo > 45)
             {
-                console.log("KABUUMMMMM! Você tomou 50 de dano de fogo!")
+                console.log("KABUUMMMMM! Você tomou " + tempo + " pontos de dano de fogo!")
             }
             else if (tempo < 15) 
             {
@@ -79,7 +77,7 @@ function esquentarComida(idComida, tempo){
             }
             else if (tempo > 36)
             {
-                console.log("KABUUMMMMM! Você tomou 50 de dano de fogo!")
+                console.log("KABUUMMMMM! Você tomou " + tempo + " pontos de dano de fogo!")
             }
             else if (tempo < 12) 
             {
@@ -93,22 +91,4 @@ function esquentarComida(idComida, tempo){
     }
 }
 
-esquentarComida(4, 10)
-
-
-
-
-
-
-
-
-// function esquentarComida (idComida, tempo){
-//         if ((idComida == 1 && (tempo >= 10 && tempo <= 20)) || (idComida == 2, 5 && (tempo >= 8 || tempo <= 16)) || (idComida == 3 && (tempo >= 15 && tempo <= 30)) || idComida == 4 && (tempo >=12 && tempo <=24))
-//         {console.log ("Prato pronto, bom apetite")
-//         }
-        
-//         else if ((idComida == 1 && (tempo >= 20 && tempo <= 30)) || (idComida == 2, 5 && (tempo > 16 || tempo <= 24)) || (idComida == 3 && (tempo >= 30 && tempo <= 45)) || idComida == 4 && (tempo >=24 && tempo <=36)) 
-        
-//         {console.log ("Tua comida queimou...")
-//     }
-// }
+esquentarComida(1, 20)
